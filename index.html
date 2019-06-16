@@ -35,8 +35,7 @@
     <script>
         const innerEl = document.querySelector('.inner');
         const outerEl = document.querySelector('.outer');
-
-        window.addEventListener('resize', () => {
+        const setBoxes = () => {
             const { innerHeight, innerWidth, outerHeight, outerWidth } = window;
             console.log(`innerHeight: ${innerHeight}, innerWidth: ${innerWidth}`);
             console.log(`outerHeight: ${outerHeight}, outerWidth: ${outerWidth}`);
@@ -45,6 +44,9 @@
             innerEl.style.width = `${innerWidth}px`;
             outerEl.style.height = `${outerHeight}px`;
             outerEl.style.width = `${outerWidth}px`;
-        });
+        };
+
+        window.addEventListener('resize', setBoxes);
+        window.addEventListener('scroll', setBoxes);
     </script>
 </html>
