@@ -30,6 +30,22 @@
               border: 2px solid red;
               position: fixed;
             }
+            
+            .scretched {
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                border: 3px dashed purple;
+            }
+            
+            .full {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                border: 4px dashed orange;
+            }
 
             body,
             html {
@@ -41,6 +57,8 @@
         <div class="inner"></div>
         <div class="outer"></div>
         <div class="bottom"></div>
+        <div class="scretched"></div>
+        <div class="full"></div>
     </body>
     <script>
         const innerEl = document.querySelector('.inner');
