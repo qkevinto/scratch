@@ -21,6 +21,15 @@
                 left: 0;
                 background-color: rgba(0,254,0, 0.4);
             }
+            
+            .bottom {
+              left: 0;
+              bottom: 0;
+              height: 100px;
+              width: 100%;
+              border: 2px solid red;
+              position: fixed;
+            }
 
             body,
             html {
@@ -31,6 +40,7 @@
     <body>
         <div class="inner"></div>
         <div class="outer"></div>
+        <div class="bottom"></div>
     </body>
     <script>
         const innerEl = document.querySelector('.inner');
