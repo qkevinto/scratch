@@ -76,8 +76,17 @@
             outerEl.style.width = `${outerWidth}px`;
         };
 
-        window.addEventListener('resize', setBoxes);
-        window.addEventListener('scroll', setBoxes);
-        window.addEventListener('ontouchmove', setBoxes);
+        window.addEventListener('resize', () => {
+            console.log('resize');
+            setBoxes();
+        });
+        window.addEventListener('scroll', () => {
+            console.log('scroll');
+            setBoxes();
+        });
+        window.addEventListener('ontouchmove', () => {
+            console.log('ontouchmove');
+            setBoxes();
+        });
     </script>
 </html>
